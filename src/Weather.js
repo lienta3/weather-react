@@ -8,7 +8,7 @@ export default function Weather() {
 
   useEffect(() => {
     let api_key = "b2a5adcct04b33178913oc335f405433";
-    let api_url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${api_key}&units=metric`;
+    let api_url = `https://api.shecodes.io/weather/v1/current?query=Sydney&key=${api_key}&units=metric`;
     axios.get(api_url).then((response) => {
       setWeather({
         cityResult: response.data.city,
